@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Exchange Currency Page</title>
+<meta name="author" content="Bahaa Hayajneh">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<meta charset="utf-8">
+<script src="mainjava.js">
+
+</script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="jquery-3.5.1.slim.min.js"></script>
+<script src="popper.min.js"></script>
+<link rel="stylesheet" href="mystyle.css">
+<style>
+
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+a:hover
+{
+color:black;
+
+
+}
+
+
+
+</style>
+</head>
+
+<body>
+    <div style="margin: 0;background-color:white;" class="container-fluid border  text-dark  row ">
+        <ul class="navbar ">
+        
+        <li class="nav-item"><a  class="text-dark col-sm vw1 " href="Home.html">Home</a></li>
+        
+        <li class="nav-item"><a  class="text-dark col-sm vw1 " href="sighnup.html">Sign Up</a></li>
+        <li class="nav-item"><a  class="text-dark col-sm vw1 " href="login.html">Log In </a></li>
+        <li class="nav-item"><a  class="text-dark col-sm vw1 " href="contact.html">Contact</a></li>
+        
+        <form>
+        <input class="col-sm"   type="search" placeholder=" Search...">
+        <button type="button"  class="btn vw1 search btn-lg btn-dark  text-white "><span class="glyphicon glyphicon-search"></span>Search</button>
+        
+        </form>
+        </ul>
+        </div>
+</div>
+
+
+
+
+</div>
+
+<img   class="img-thumbnail back  mx-auto d-block border img-fluid" src="images/money1.jpg">
+
+
+
+<br><br><br><br>
+
+<br>
+<div style="margin-left: 15%;" class="spinner  spinner-grow spinner-grow-sm text-muted"></div>
+<div style="margin-left: 10%;" class="spinner spinner-grow spinner-grow-sm text-primary"></div>
+<div style="margin-left: 10%;" class="spinner spinner-grow spinner-grow-sm text-danger"></div>
+<div style="margin-left: 10%;" class="spinner spinner-grow spinner-grow-sm text-warning"></div>
+<div style="margin-left: 10%;"  class="spinner spinner-grow spinner-grow-sm text-dark"></div>
+<div style="margin-left: 10%;" class="spinner spinner-grow spinner-grow-sm text-success"></div>
+
+
+<br><br><br>
+
+<div class="container-fluid text-muted ">
+<h1 class="text-dark vw3">About Currency Exchange </h1>
+
+<h4  class="vw1">It is a simple tool for converting Jordan  currency 
+    
+    into their equivalent in other countries currencies.</h4>
+
+</div>
+<br><br><br><br>
+
+<div class="container-fluid text-muted border  bg-light">
+    <img style="width: 100%;height: 370px;" class="img-fluid   mx-auto d-block" src="images/cover.png">
+    
+<h3 class="text-dark text-center vw2">Jordan Currency Exchange Calculator</h3><br>
+<form style="font-weight: bold;" class="was-validated">
+    <div class="form-group">
+        <h4 class="text-dark vw1">JD Jordanian</h4>
+<input id="m1" type="text" class="form-control vw1" pattern="^-?\d*\.?\d+$" required placeholder="Enter JD Currency">
+<div class="valid-feedback vw1">Valid Value</div>
+<div class="invalid-feedback vw1">InValid Value</div>
+</div>
+
+<div class="form-group">
+    <div class="vw1">Dollar American</div>
+<input id="m2" type="text" class="form-control vw1"  placeholder="Equivalent Dollar American Currency">
+
+</div>
+<div class="form-group">
+    <div class="vw1">SR Saudian</div>
+<input id="m3" type="text" class="form-control vw1"  placeholder="Equivalent SR Saudian Currency">
+
+</div>
+<div class="form-group">
+    <div class="vw1">AED Emirates</div>
+<input id="m4" type="text" class="form-control vw1"  placeholder="Equivalent AED Emirates Currency">
+
+</div>
+<div class="form-group">
+    <div class="vw1">Egyptian Pound</div>
+<input id="m5" type="text" class="form-control vw1"  placeholder="Equivalent Egyptian Pound  Currency">
+
+</div>
+<div class="form-group">
+    <div class="vw1">Bahraini Dinar</div>
+<input id="m6" type="text" class="form-control vw1"  placeholder="Equivalent Bahraini Dinar Currency">
+
+</div>
+
+<div class="form-group">
+    <div class="vw1">Kuwaiti Dinar</div>
+<input id="m7" type="text" class="form-control vw1"  placeholder="Equivalent Kuwaiti Dinar Currency">
+
+</div>
+<div class="form-group">
+    <div class="vw1">Euro</div>
+<input id="m8" type="text" class="form-control vw1"  placeholder="Equivalent Euro Currency">
+
+</div>
+<div class="form-group">
+    <div class="vw1">JPY Japan</div>
+<input id="m9" type="text" class="form-control vw1"  placeholder="Equivalent JPY Japan Currency">
+
+</div>
+
+<div class="form-group">
+    <div class="vw1">Brazilian Real</div>
+<input id="m10" type="text" class="form-control vw1"  placeholder="Equivalent Brazilian Real Currency">
+
+</div>
+<div class="form-group">
+    <div class="vw1">Indian Rupees</div>
+<input id="m11" type="text" class="form-control vw1"  placeholder="Equivalent Indian Rupees Currency">
+
+</div>
+<div class="form-group">
+    <div class="vw1">Russian Ruble</div>
+<input id="m12" type="text" class="form-control vw1"  placeholder="Equivalent Russian Ruble Currency">
+
+</div>
+
+<div class="form-group">
+    <div class="vw1">Vietnamese Dong</div>
+<input id="m13" type="text" class="form-control vw1"  placeholder="Equivalent Vietnamese Dong Currency">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+<button style="width: 100%;" class="btn btn-primary vw1" onclick="f20()" type="button">Convert</button><br><br>
+
+<button style="width: 100%;" class="btn btn-success vw1"  type="reset">Clear</button>
+
+
+</form>
+
+<br><br><br>
+
+
+
+
+</div>
+
+<br><br><br><br><br><br>
+
+
+<div class="container-fluid border bg-light">
+    <br>
+    <div style="margin-left:15%;">
+<img  style="width: 20%;" class="img-fluid border mx-auto  img-thumbnail " src="images/m1.jpg">
+<img style="width: 20%;"  class="img-fluid border mx-auto  img-thumbnail " src="images/m2.jpg">
+<img style="width: 20%;"  class="img-fluid border mx-auto  img-thumbnail " src="images/math19.jpeg">
+
+<img style="width: 20%;"  class="img-fluid border mx-auto  img-thumbnail " src="images/m4.jpg">
+</div>
+<div style="margin-left:15%;">
+    <img style="width: 20%;"  class="img-fluid border mx-auto  img-thumbnail " src="images/math15.jpeg">
+<img style="width: 20%;"  class="img-fluid border mx-auto  img-thumbnail " src="images/m6.jpg">
+<img style="width: 20%;"  class="img-fluid border mx-auto  img-thumbnail " src="images/math7.jpeg">
+<img style="width: 20%;"  class="img-fluid border mx-auto  img-thumbnail " src="images/math11.jpg">
+</div>
+<div style="margin-left:15%;">
+<img style="width: 20%;"  class="img-fluid border mx-auto  img-thumbnail " src="images/math13.jpeg">
+<img style="width: 20%;"  class="img-fluid border mx-auto  img-thumbnail " src="images/math14.jpeg">
+
+<img style="width: 20%;"  class="img-fluid border mx-auto  img-thumbnail " src="images/m7.jpg">
+<img style="width: 20%;" class="img-fluid border mx-auto  img-thumbnail " src="images/m3.jpg">
+
+
+</div>
+
+
+
+<br><br><br><br><br><br>
+
+</div>
+<br><br><br><br><br><br>
+
+<br><br><br><br><br><br><br>
+<div class="container-fluid border bg-light ">
+    <br>
+<div  class="text-muted vw3">Share Your Opinion From Here...</div><br>
+<form >
+    <div class="form-group">
+<label class="text-muted vw1">UserName</label><br>
+<input class="form-control vw1" type="text" placeholder="UserName" required><br>
+<div class="valid-feedback vw1">Valid UserName</div>
+
+<div class="invalid-feedback vw1">Please fill out this field.</div>
+</div>
+
+
+<div class="form-group">
+
+<textarea rows="10" class="form-control vw1" required placeholder="Write Your Comment From Here..."></textarea>
+<div class="valid-feedback vw1">Valid Comment</div>
+
+<div class="invalid-feedback vw1">Please fill out this field.</div>
+
+</div>
+
+<button style="width: 100%;" type="submit" class="btn btn-primary vw1 ">Comment</button><br><br>
+<button style="width: 100%;" type="reset" class="btn btn-success vw1">Clear</button>
+
+</form>
+<br><br><br><br><br><br>
+</div>
+
+</div>
+    
+</div>
+
+</div>
+    
+</div>
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br>
+<div class="container-fluid bg-light border text-dark ">
+    <br><br>
+    
+    <h1 class="text-center">Contact Me</h1><hr>
+    <h4  class="text-dark text-center">Contact me by social media or Contact page</h4><br><br>
+    <a style="margin-left: 47%;" href="https://twitter.com/BahaaHayajneh2"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.instagram.com/abu_wesam212/"><i class="fa fa-instagram"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=0778343994"><i class="fa fa-whatsapp"></i></a>
+    <a href="https://web.facebook.com/Bahaa.haya99"><i class="fa fa-facebook"></i></a>
+    <br><br><br><br><br><br>
+  
+</div>
+
+
+
+</body>
+
+
+
+
+
+</html>

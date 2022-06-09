@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home Page</title>
+<meta name="author" content="Bahaa Hayajneh">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon"  href="images/cover1.png">
+<meta charset="utf-8">
+<script src="mainjava.js">
+
+</script>
+<script>
+function add(){
+      var new_chq_no = parseInt($('#total_chq').val())+1;
+      var new_input="<input type='text' id='new_"+new_chq_no+"'>";
+      $('#new_chq').append(new_input);
+      $('#total_chq').val(new_chq_no)
+    }
+    function remove(){
+      var last_chq_no = $('#total_chq').val();
+      if(last_chq_no>1){
+        $('#new_'+last_chq_no).remove();
+        $('#total_chq').val(last_chq_no-1);
+      }
+    }
+</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="jquery-3.5.1.slim.min.js"></script>
+<script src="popper.min.js"></script>
+<link rel="stylesheet" href="mystyle.css">
+<style>
+
+div ul li {font-size:66pt;color: red;}
+ol li {font-size:67pt;color: yellow;}
+li{font-size: 68;color: green;}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+a:hover
+{
+color:black;
+
+
+}
+
+</style>
+</head>
+
+<body>
+ 
+    <input type="text">
+    <button onclick="add()">Add</button>
+    <button onclick="remove()">remove</button>
+    <div id="new_chq"></div>
+    <input type="hidden" value="1" id="total_chq">
+
+
+
+
+
+
+
+
+
+
+  
+<div class="container-fluid bg-light border text-dark ">
+    <br><br>
+    
+    <h1 class="text-center">Contact Me</h1><hr>
+    <h4  class="text-dark text-center">Contact me by social media or Contact page</h4><br><br>
+    <a style="margin-left: 47%;" href="https://twitter.com/BahaaHayajneh2"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.instagram.com/abu_wesam212/"><i class="fa fa-instagram"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=0778343994"><i class="fa fa-whatsapp"></i></a>
+    <a href="https://web.facebook.com/Bahaa.haya99"><i class="fa fa-facebook"></i></a>
+    <br><br><br><br><br><br>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
